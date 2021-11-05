@@ -16,12 +16,16 @@ import java.util.logging.Logger;
 public class Ventana extends JFrame implements ChangeListener, ActionListener {
 
     /* Definimos variables. */
-    private JTextField textfield1, textfield2,textField3, textfield4, textfield5, textfield6, textfield7, textfield8, textfield9;
+    private JTextField textfield1, textfield2,textField3, textfield4, textfield5, textfield6, textfield7, textfield8, textfield9, textfield10;
     private JLabel nombre, apellidos, sexo, direccion, telefono, NIF, codigopost, email, contraseña, pais, provincia, poblacion, descripcion, carta;
     private JComboBox combo1;
     private JComboBox combo2;
     private JComboBox combo3;
-    private JCheckBox checkBox1, checkBox2, checkBox3, checkBox4, checkBox5;
+    private JCheckBox checkBox1;
+    private JCheckBox checkBox2;
+    private JCheckBox checkBox3;
+    private JCheckBox checkBox4;
+    private JCheckBox checkBox5;
     private JTextArea textarea1;
     private JButton generar;
     JTextPane text = new JTextPane();
@@ -101,6 +105,7 @@ public class Ventana extends JFrame implements ChangeListener, ActionListener {
 
         carta=new JLabel("Carta de presentación:");
         carta.setBounds(10,630,150,30);
+        setVisible(false);
         add(carta);
 
 
@@ -143,6 +148,13 @@ public class Ventana extends JFrame implements ChangeListener, ActionListener {
         textfield9=new JTextField();
         textfield9.setBounds(120,410,150,30);
         add(textfield9);
+
+        textfield10=new JTextField();
+        textfield10.setBounds(450,600,75,30);
+        textfield10.setVisible(false);
+        add(textfield10);
+
+
 
 
 
@@ -334,28 +346,37 @@ public class Ventana extends JFrame implements ChangeListener, ActionListener {
         //Añado los 3 checkbox con su ChangeListener y la etiqueta
         checkBox1 = new JCheckBox("Español");
         checkBox1.setBounds(10,600,75,30);
+        checkBox1.setBackground(Color.gray);
         checkBox1.addChangeListener(this);
         add(checkBox1);
 
         checkBox2 = new JCheckBox("Inglés");
         checkBox2.setBounds(100,600,75,30);
+        checkBox2.setBackground(Color.gray);
         checkBox2.addChangeListener(this);
         add(checkBox2);
 
         checkBox3 = new JCheckBox("Alemán");
         checkBox3.setBounds(190,600,75,30);
+        checkBox3.setBackground(Color.gray);
         checkBox3.addChangeListener(this);
         add(checkBox3);
 
         checkBox4 = new JCheckBox("Italiano");
         checkBox4.setBounds(280,600,75,30);
+        checkBox4.setBackground(Color.gray);
         checkBox4.addChangeListener(this);
         add(checkBox4);
 
         checkBox5 = new JCheckBox("Otros");
         checkBox5.setBounds(370,600,75,30);
+        checkBox5.setBackground(Color.gray);
         checkBox5.addChangeListener(this);
         add(checkBox5);
+
+        //if (checkBox5 = true){
+
+        //}
 
 
 
@@ -391,7 +412,7 @@ public class Ventana extends JFrame implements ChangeListener, ActionListener {
         generar.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e) {
-textoJEditPane = "Nombre: " + textfield1.getText() + "\nApellidos: " + textfield2.getText() + "\nSexo: " + combo3.getSelectedItem() + "\nDirección: " + textfield4.getText() +"\nTeléfono: " + textfield5.getText() +"\nNIF: " + textfield6.getText() +"\nCódigo Postal: " + textfield7.getText() +"\nEmail: " + textfield8.getText() +"\nContraseña: " + textfield9.getText() + "\nPaís: " + combo1.getSelectedItem() + "\nProvincia: " + combo2.getSelectedItem()  + "\nPoblación: " + textField3.getText() + "\nIdiomas: " + checkBox1.getText() + "" + checkBox2.getText() + "" + checkBox3.getText() + "" + checkBox4.getText() + "" + checkBox5.getText() + "\nCarta de presentacion: " + "\n" + textarea1.getText();
+textoJEditPane = "Nombre: " + textfield1.getText() + "\nApellidos: " + textfield2.getText() + "\nSexo: " + combo3.getSelectedItem() + "\nDirección: " + textfield4.getText() +"\nTeléfono: " + textfield5.getText() +"\nNIF: " + textfield6.getText() +"\nCódigo Postal: " + textfield7.getText() +"\nEmail: " + textfield8.getText() +"\nContraseña: " + textfield9.getText() + "\nPaís: " + combo1.getSelectedItem() + "\nProvincia: " + combo2.getSelectedItem()  + "\nPoblación: " + textField3.getText() + "\nIdiomas: " + checkBox1.getText() + " " + checkBox2.getText() + " " + checkBox3.getText() + " " + checkBox4.getText() + " " + checkBox5.getText() + ": " + textfield10.getText() + "\nCarta de presentacion: " + "\n" + textarea1.getText();
                 text.setText(textoJEditPane);
 
 
@@ -472,8 +493,11 @@ textoJEditPane = "Nombre: " + textfield1.getText() + "\nApellidos: " + textfield
         menuItem35.addActionListener(this);
 
 
+
+
         /* Muestro el JFrame */
         setVisible(true);
+
 
 
 
@@ -722,7 +746,6 @@ textoJEditPane = "Nombre: " + textfield1.getText() + "\nApellidos: " + textfield
 
 
 
-
     /* En el método main creamos un objeto de la clase Ejemplo6 */
     public static void main(String[] args) {
 
@@ -732,7 +755,11 @@ textoJEditPane = "Nombre: " + textfield1.getText() + "\nApellidos: " + textfield
 
     @Override
     public void stateChanged(ChangeEvent e) {
-
+        if (checkBox5.isSelected()){
+            textfield10.setVisible(true);
+        }else if (checkBox5.isSelected() == Boolean.parseBoolean(null)){
+            textfield10.setVisible(false);
+        }
     }
 
 
