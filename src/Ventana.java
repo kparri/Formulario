@@ -42,6 +42,7 @@ public class Ventana extends JFrame implements ChangeListener, ActionListener {
         setLayout(null);
         setBounds(0,0,750,1000);
         setTitle("Formulario");
+        this.getContentPane().setBackground(Color.gray);
         setResizable(false);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
 
@@ -427,19 +428,19 @@ textoJEditPane = "Nombre: " + textfield1.getText() + "\nApellidos: " + textfield
 
         /* Creamos los dos primeros objetos de la clase JMenuItem y los asociamos con el segundo JMenu */
         menuItem21=new JMenuItem("20");
-        menu2.add(menuItem21);
+        menu5.add(menuItem21);
         menuItem21.addActionListener(this);
         menuItem22=new JMenuItem("15");
-        menu2.add(menuItem22);
+        menu5.add(menuItem22);
         menuItem22.addActionListener(this);
         getMenuItem24=new JMenuItem("8");
-        menu2.add(getMenuItem24);
+        menu5.add(getMenuItem24);
         getMenuItem24.addActionListener(this);
         getMenuItem23=new JMenuItem("10");
-        menu2.add(getMenuItem23);
+        menu5.add(getMenuItem23);
         getMenuItem23.addActionListener(this);
         getMenuItem25=new JMenuItem("12");
-        menu2.add(getMenuItem25);
+        menu5.add(getMenuItem25);
         getMenuItem25.addActionListener(this);
 
 
@@ -460,13 +461,13 @@ textoJEditPane = "Nombre: " + textfield1.getText() + "\nApellidos: " + textfield
         menuItem32=new JMenuItem("Verde");
         menu4.add(menuItem32);
         menuItem32.addActionListener(this);
-        menuItem33=new JMenuItem("Negro");
+        menuItem33=new JMenuItem("Blanco");
         menu4.add(menuItem33);
         menuItem33.addActionListener(this);
         menuItem34=new JMenuItem("Azul");
         menu4.add(menuItem34);
         menuItem34.addActionListener(this);
-        menuItem35=new JMenuItem("Rosa");
+        menuItem35=new JMenuItem("Morado");
         menu4.add(menuItem35);
         menuItem35.addActionListener(this);
 
@@ -593,20 +594,105 @@ textoJEditPane = "Nombre: " + textfield1.getText() + "\nApellidos: " + textfield
             checkBox5.setFont(new Font("Roboto", Font.PLAIN,12));
         }
         if (e.getSource()==menuItem31) {
-            getContentPane().setBackground(new Color(255,0,0));
+            textfield1.setForeground(new Color(255,0,0));
+            textfield2.setForeground(new Color(255,0,0));
+            textField3.setForeground(new Color(255,0,0));
+            textfield4.setForeground(new Color(255,0,0));
+            textfield5.setForeground(new Color(255,0,0));
+            textfield6.setForeground(new Color(255,0,0));
+            textfield7.setForeground(new Color(255,0,0));
+            textfield8.setForeground(new Color(255,0,0));
+            textfield9.setForeground(new Color(255,0,0));
+            textarea1.setForeground(new Color(255,0,0));
+            combo1.setForeground(new Color(255,0,0));
+            combo2.setForeground(new Color(255,0,0));
+            combo3.setForeground(new Color(255,0,0));
+            checkBox1.setForeground(new Color(255,0,0));
+            checkBox2.setForeground(new Color(255,0,0));
+            checkBox3.setForeground(new Color(255,0,0));
+            checkBox4.setForeground(new Color(255,0,0));
+            checkBox5.setForeground(new Color(255,0,0));
 
         }
         if (e.getSource()==menuItem32) {
-            getContentPane().setBackground(new Color(0,255,0));
+            textfield1.setForeground(new Color(0,255,0));
+            textfield2.setForeground(new Color(0,255,0));
+            textField3.setForeground(new Color(0,255,0));
+            textfield4.setForeground(new Color(0,255,0));
+            textfield5.setForeground(new Color(0,255,0));
+            textfield6.setForeground(new Color(0,255,0));
+            textfield7.setForeground(new Color(0,255,0));
+            textfield8.setForeground(new Color(0,255,0));
+            textfield9.setForeground(new Color(0,255,0));
+            textarea1.setForeground(new Color(0,255,0));
+            combo1.setForeground(new Color(0,255,0));
+            combo2.setForeground(new Color(0,255,0));
+            combo3.setForeground(new Color(0,255,0));
+            checkBox1.setForeground(new Color(0,255,0));
+            checkBox2.setForeground(new Color(0,255,0));
+            checkBox3.setForeground(new Color(0,255,0));
+            checkBox4.setForeground(new Color(0,255,0));
+            checkBox5.setForeground(new Color(0,255,0));
         }
         if (e.getSource()==menuItem33) {
-            getContentPane().setBackground(new Color(0,0,0));
+            textfield1.setForeground(new Color(255, 255, 255));
+            textfield2.setForeground(new Color(255, 255, 255));
+            textField3.setForeground(new Color(255, 255, 255));
+            textfield4.setForeground(new Color(255, 255, 255));
+            textfield5.setForeground(new Color(255, 255, 255));
+            textfield6.setForeground(new Color(255, 255, 255));
+            textfield7.setForeground(new Color(255, 255, 255));
+            textfield8.setForeground(new Color(255, 255, 255));
+            textfield9.setForeground(new Color(255, 255, 255));
+            textarea1.setForeground(new Color(255, 255, 255));
+            combo1.setForeground(new Color(255, 255, 255));
+            combo2.setForeground(new Color(255, 255, 255));
+            combo3.setForeground(new Color(255, 255, 255));
+            checkBox1.setForeground(new Color(255,255, 255));
+            checkBox2.setForeground(new Color(255,255, 255));
+            checkBox3.setForeground(new Color(255,255, 255));
+            checkBox4.setForeground(new Color(255,255, 255));
+            checkBox5.setForeground(new Color(255,255, 255));
         }
         if (e.getSource()==menuItem34) {
-            getContentPane().setBackground(new Color(0, 42, 255));
+            textfield1.setForeground(new Color(0, 42, 255));
+            textfield2.setForeground(new Color(0, 42, 255));
+            textField3.setForeground(new Color(0, 42, 255));
+            textfield4.setForeground(new Color(0, 42, 255));
+            textfield5.setForeground(new Color(0, 42, 255));
+            textfield6.setForeground(new Color(0, 42, 255));
+            textfield7.setForeground(new Color(0, 42, 255));
+            textfield8.setForeground(new Color(0, 42, 255));
+            textfield9.setForeground(new Color(0, 42, 255));
+            textarea1.setForeground(new Color(0, 42, 255));
+            combo1.setForeground(new Color(0, 42, 255));
+            combo2.setForeground(new Color(0, 42, 255));
+            combo3.setForeground(new Color(0, 42, 255));
+            checkBox1.setForeground(new Color(0, 42, 255));
+            checkBox2.setForeground(new Color(0, 42, 255));
+            checkBox3.setForeground(new Color(0, 42, 255));
+            checkBox4.setForeground(new Color(0, 42, 255));
+            checkBox5.setForeground(new Color(0, 42, 255));
         }
         if (e.getSource()==menuItem35) {
-            getContentPane().setBackground(new Color(183, 0, 255));
+            textfield1.setForeground(new Color(183, 0, 255));
+            textfield2.setForeground(new Color(183, 0, 255));
+            textField3.setForeground(new Color(183, 0, 255));
+            textfield4.setForeground(new Color(183, 0, 255));
+            textfield5.setForeground(new Color(183, 0, 255));
+            textfield6.setForeground(new Color(183, 0, 255));
+            textfield7.setForeground(new Color(183, 0, 255));
+            textfield8.setForeground(new Color(183, 0, 255));
+            textfield9.setForeground(new Color(183, 0, 255));
+            textarea1.setForeground(new Color(183, 0, 255));
+            combo1.setForeground(new Color(183, 0, 255));
+            combo2.setForeground(new Color(183, 0, 255));
+            combo3.setForeground(new Color(183, 0, 255));
+            checkBox1.setForeground(new Color(183, 0, 255));
+            checkBox2.setForeground(new Color(183, 0, 255));
+            checkBox3.setForeground(new Color(183, 0, 255));
+            checkBox4.setForeground(new Color(183, 0, 255));
+            checkBox5.setForeground(new Color(183, 0, 255));
         }
         if (e.getSource()==menuItem51) {
             System.exit(0);
