@@ -733,7 +733,7 @@ textoJEditPane = "Nombre: " + textfield1.getText() + "\nApellidos: " + textfield
             combo1.setSelectedIndex(0);
             combo2.setSelectedIndex(0);
             combo3.setSelectedIndex(0);
-            textarea1.setText(null);
+
 
 
 
