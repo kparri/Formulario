@@ -252,7 +252,7 @@ public class Ventana extends JFrame implements ChangeListener, ActionListener {
                     combo2.addItem("Molise");
                     combo2.addItem("Abruzo");
 
-                }else if (e.getItem() == "Turquia"){
+                }else if (e.getItem() == "Turquía"){
                     combo2.addItem("Provincias");
                     combo2.addItem("Estambul");
                     combo2.addItem("Ankara");
@@ -265,7 +265,7 @@ public class Ventana extends JFrame implements ChangeListener, ActionListener {
                     combo2.addItem("Kayseri");
                     combo2.addItem("Mersin");
 
-                }else if (e.getItem() == "Mexico"){
+                }else if (e.getItem() == "México"){
                     combo2.addItem("Estados");
                     combo2.addItem("Aguascalientes");
                     combo2.addItem("Baja California");
@@ -730,6 +730,7 @@ textoJEditPane = "Nombre: " + textfield1.getText() + "\nApellidos: " + textfield
             textfield7.setText(null);
             textfield8.setText(null);
             textfield9.setText(null);
+            textfield10.setText(null);
             combo1.setSelectedIndex(0);
             combo2.setSelectedIndex(0);
             combo3.setSelectedIndex(0);
