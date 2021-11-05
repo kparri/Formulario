@@ -1,3 +1,4 @@
+import com.sun.org.apache.xpath.internal.operations.Variable;
 import sun.security.mscapi.CPublicKey;
 
 import javax.swing.*;
@@ -26,7 +27,7 @@ public class Ventana extends JFrame implements ChangeListener, ActionListener {
     JTextPane text = new JTextPane();
     private JMenuBar menuBar;
     private JMenu menu1, menu2, menu3, menu4, menu5;
-    private JMenuItem menuItem21, menuItem22, menuItem31, menuItem32, menuItem33,menuItem34,menuItem35,menuItem51, menuItem52;
+    private JMenuItem menuItem21, menuItem22, menuItem31, menuItem32, menuItem33,menuItem34,menuItem35,menuItem51, menuItem52, getMenuItem23,getMenuItem24,getMenuItem25;
     private  String textoJEditPane;
 
 
@@ -431,6 +432,15 @@ textoJEditPane = "Nombre: " + textfield1.getText() + "\nApellidos: " + textfield
         menuItem22=new JMenuItem("15");
         menu2.add(menuItem22);
         menuItem22.addActionListener(this);
+        getMenuItem24=new JMenuItem("8");
+        menu2.add(getMenuItem24);
+        getMenuItem24.addActionListener(this);
+        getMenuItem23=new JMenuItem("10");
+        menu2.add(getMenuItem23);
+        getMenuItem23.addActionListener(this);
+        getMenuItem25=new JMenuItem("12");
+        menu2.add(getMenuItem25);
+        getMenuItem25.addActionListener(this);
 
 
         menuItem52=new JMenuItem("Limpiar");
@@ -475,12 +485,112 @@ textoJEditPane = "Nombre: " + textfield1.getText() + "\nApellidos: " + textfield
 
 
         if (e.getSource()==menuItem21) {
+            textfield1.setFont(new Font("Roboto", Font.PLAIN,20));
+            textfield2.setFont(new Font("Roboto", Font.PLAIN,20));
+            textField3.setFont(new Font("Roboto", Font.PLAIN,20));
+            textfield4.setFont(new Font("Roboto", Font.PLAIN,20));
+            textfield5.setFont(new Font("Roboto", Font.PLAIN,20));
+            textfield6.setFont(new Font("Roboto", Font.PLAIN,20));
+            textfield7.setFont(new Font("Roboto", Font.PLAIN,20));
+            textfield8.setFont(new Font("Roboto", Font.PLAIN,20));
+            textfield9.setFont(new Font("Roboto", Font.PLAIN,20));
+            textarea1.setFont(new Font("Roboto", Font.PLAIN,20));
+            combo1.setFont(new Font("Roboto", Font.PLAIN,20));
+            combo2.setFont(new Font("Roboto", Font.PLAIN,20));;
+            combo3.setFont(new Font("Roboto", Font.PLAIN,20));;
+            checkBox1.setFont(new Font("Roboto", Font.PLAIN,20));
+            checkBox2.setFont(new Font("Roboto", Font.PLAIN,20));
+            checkBox3.setFont(new Font("Roboto", Font.PLAIN,20));
+            checkBox4.setFont(new Font("Roboto", Font.PLAIN,20));
+            checkBox5.setFont(new Font("Roboto", Font.PLAIN,20));
 
 
 
         }
         if (e.getSource()==menuItem22) {
 
+            textfield1.setFont(new Font("Roboto", Font.PLAIN,15));
+            textfield2.setFont(new Font("Roboto", Font.PLAIN,15));
+            textField3.setFont(new Font("Roboto", Font.PLAIN,15));
+            textfield4.setFont(new Font("Roboto", Font.PLAIN,15));
+            textfield5.setFont(new Font("Roboto", Font.PLAIN,15));
+            textfield6.setFont(new Font("Roboto", Font.PLAIN,15));
+            textfield7.setFont(new Font("Roboto", Font.PLAIN,15));
+            textfield8.setFont(new Font("Roboto", Font.PLAIN,15));
+            textfield9.setFont(new Font("Roboto", Font.PLAIN,15));
+            textarea1.setFont(new Font("Roboto", Font.PLAIN,15));
+            combo1.setFont(new Font("Roboto", Font.PLAIN,15));
+            combo2.setFont(new Font("Roboto", Font.PLAIN,15));;
+            combo3.setFont(new Font("Roboto", Font.PLAIN,15));;
+            checkBox1.setFont(new Font("Roboto", Font.PLAIN,15));
+            checkBox2.setFont(new Font("Roboto", Font.PLAIN,15));
+            checkBox3.setFont(new Font("Roboto", Font.PLAIN,15));
+            checkBox4.setFont(new Font("Roboto", Font.PLAIN,15));
+            checkBox5.setFont(new Font("Roboto", Font.PLAIN,15));
+        }
+
+        if (e.getSource()==getMenuItem23) {
+
+            textfield1.setFont(new Font("Roboto", Font.PLAIN,10));
+            textfield2.setFont(new Font("Roboto", Font.PLAIN,10));
+            textField3.setFont(new Font("Roboto", Font.PLAIN,10));
+            textfield4.setFont(new Font("Roboto", Font.PLAIN,10));
+            textfield5.setFont(new Font("Roboto", Font.PLAIN,10));
+            textfield6.setFont(new Font("Roboto", Font.PLAIN,10));
+            textfield7.setFont(new Font("Roboto", Font.PLAIN,10));
+            textfield8.setFont(new Font("Roboto", Font.PLAIN,10));
+            textfield9.setFont(new Font("Roboto", Font.PLAIN,10));
+            textarea1.setFont(new Font("Roboto", Font.PLAIN,10));
+            combo1.setFont(new Font("Roboto", Font.PLAIN,10));
+            combo2.setFont(new Font("Roboto", Font.PLAIN,10));;
+            combo3.setFont(new Font("Roboto", Font.PLAIN,10));;
+            checkBox1.setFont(new Font("Roboto", Font.PLAIN,10));
+            checkBox2.setFont(new Font("Roboto", Font.PLAIN,10));
+            checkBox3.setFont(new Font("Roboto", Font.PLAIN,10));
+            checkBox4.setFont(new Font("Roboto", Font.PLAIN,10));
+            checkBox5.setFont(new Font("Roboto", Font.PLAIN,10));
+        }
+        if (e.getSource()==getMenuItem24) {
+
+            textfield1.setFont(new Font("Roboto", Font.PLAIN,8));
+            textfield2.setFont(new Font("Roboto", Font.PLAIN,8));
+            textField3.setFont(new Font("Roboto", Font.PLAIN,8));
+            textfield4.setFont(new Font("Roboto", Font.PLAIN,8));
+            textfield5.setFont(new Font("Roboto", Font.PLAIN,8));
+            textfield6.setFont(new Font("Roboto", Font.PLAIN,8));
+            textfield7.setFont(new Font("Roboto", Font.PLAIN,8));
+            textfield8.setFont(new Font("Roboto", Font.PLAIN,8));
+            textfield9.setFont(new Font("Roboto", Font.PLAIN,8));
+            textarea1.setFont(new Font("Roboto", Font.PLAIN,8));
+            combo1.setFont(new Font("Roboto", Font.PLAIN,8));
+            combo2.setFont(new Font("Roboto", Font.PLAIN,8));;
+            combo3.setFont(new Font("Roboto", Font.PLAIN,8));;
+            checkBox1.setFont(new Font("Roboto", Font.PLAIN,8));
+            checkBox2.setFont(new Font("Roboto", Font.PLAIN,8));
+            checkBox3.setFont(new Font("Roboto", Font.PLAIN,8));
+            checkBox4.setFont(new Font("Roboto", Font.PLAIN,8));
+            checkBox5.setFont(new Font("Roboto", Font.PLAIN,8));
+        }
+        if (e.getSource()==menuItem22) {
+
+            textfield1.setFont(new Font("Roboto", Font.PLAIN,12));
+            textfield2.setFont(new Font("Roboto", Font.PLAIN,12));
+            textField3.setFont(new Font("Roboto", Font.PLAIN,12));
+            textfield4.setFont(new Font("Roboto", Font.PLAIN,12));
+            textfield5.setFont(new Font("Roboto", Font.PLAIN,12));
+            textfield6.setFont(new Font("Roboto", Font.PLAIN,12));
+            textfield7.setFont(new Font("Roboto", Font.PLAIN,12));
+            textfield8.setFont(new Font("Roboto", Font.PLAIN,12));
+            textfield9.setFont(new Font("Roboto", Font.PLAIN,12));
+            textarea1.setFont(new Font("Roboto", Font.PLAIN,12));
+            combo1.setFont(new Font("Roboto", Font.PLAIN,12));
+            combo2.setFont(new Font("Roboto", Font.PLAIN,12));;
+            combo3.setFont(new Font("Roboto", Font.PLAIN,12));;
+            checkBox1.setFont(new Font("Roboto", Font.PLAIN,12));
+            checkBox2.setFont(new Font("Roboto", Font.PLAIN,12));
+            checkBox3.setFont(new Font("Roboto", Font.PLAIN,12));
+            checkBox4.setFont(new Font("Roboto", Font.PLAIN,12));
+            checkBox5.setFont(new Font("Roboto", Font.PLAIN,12));
         }
         if (e.getSource()==menuItem31) {
             getContentPane().setBackground(new Color(255,0,0));
@@ -513,6 +623,7 @@ textoJEditPane = "Nombre: " + textfield1.getText() + "\nApellidos: " + textfield
             combo1.setSelectedIndex(0);
             combo2.setSelectedIndex(0);
             combo3.setSelectedIndex(0);
+            textarea1.setText(null);
 
 
 
